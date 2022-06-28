@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Header from "./Header.js";
 const tenJokesApi =
   "https://v2.jokeapi.dev/joke/Programming?type=twopart&amount=10";
 const jokeApi = "https://v2.jokeapi.dev/joke/Programming?type=twopart";
@@ -29,6 +29,7 @@ class Jokes extends Component {
   render() {
     return (
       <div>
+        <Header/>
         <h2>Highlighted Joke</h2>
         <Joke joke={this.state.joke} />
         <hr />

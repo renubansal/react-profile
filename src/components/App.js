@@ -4,6 +4,7 @@ import profile from  "../assets/profile.png"
 import SocialProfiles from "./SocialProfiles.js";
 import Title from "./Title.js";
 import Jokes from "./Jokes.js";
+import Header from "./Header.js";
 
 class App extends Component {
     constructor() {
@@ -20,6 +21,7 @@ class App extends Component {
     render() {
         return (
             <div>
+                <Header/>
                 <img src={profile} alt='profile' className="profile"/>
                 <h1>Hello!</h1>
                 <p>I am Renu Bansal</p>
