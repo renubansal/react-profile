@@ -16,7 +16,8 @@ class Jokes extends Component {
   componentDidMount() {
     fetch(jokeApi)
       .then((response) => response.json())
-      .then((json) => this.setState({ joke: json }));
+      .then((json) => this.setState({ joke: json }))
+      .catch(error => alert.error);
   }
 
   fetchJokes = () => {
