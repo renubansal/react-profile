@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Switch, Route, Routes } from "react-router-dom";
 import App from "./components/App.js";
-import Jokes from "./components/Jokes.js";
-import { createBrowserHistory } from "react-router-dom/node_modules/history";
+import Jokes from "./components/Jokes.js"; 
 import "./index.css";
 import Header from "./components/Header.js";
+import MusicMaster from './music-master/src/components/App.js';
 
 // const history = createBrowserHistory();
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -14,6 +14,7 @@ root.render(
     <Routes>
         <Route path="/" element={<Header><App /></Header>}></Route>
         <Route path="jokes" element={<Header><Jokes/></Header>} />
+        <Route path="music" element={<Header><MusicMaster/></Header>} />
     </Routes>
   </BrowserRouter>
 );
